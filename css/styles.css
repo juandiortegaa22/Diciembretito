@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, sans-serif;
+}
+
+/* Login y Registro container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #faf6f6;
+}
+
+/* Form card (desktop) */
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fcf9f9;
+  color: #2600ff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-left {
+  width: 40%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-right-out {
+  width: 60%;
+  padding: 32px;
+}
+
+.card-right-in {
+  background: url("https://i1.wp.com/www.construcanchas.com/wp-content/uploads/2021/03/fondo-3.jpg?w=1280&ssl=1") center center no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Form inputs y buttons */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .form-label {
+  font-weight: bold;
+}
+
+form input {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: none !important;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f8f8 !important;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  color: #fcf5f5;
+  font-size: 16px;
+  font-weight: medium;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:nth-of-type(1) {
+  background-color: #030303;
+}
+
+form button:nth-of-type(1):hover {
+  background-color: #0056b3;
+}
+
+form button:nth-of-type(2) {
+  background-color: transparent;
+  color: #0606f1;
+  margin-top: 10px;
+}
+form button:nth-of-type(2):hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+form input:focus {
+  box-shadow: none !important;
+}
+
+form button:hover {
+  background-color: #020202 ;
+}
+
+form .btn-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+form .btn-link:hover {
+  color: #0056b3;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+body.dark-mode .card {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.darkmode-button {
+  background: none;
+  border: none;
+  color: #8c8c8c;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-right: auto;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    background-color: #ffffffaa;
+  }
+
+  .card-left {
+    width: 100%;
+  }
+
+  .card-right-out {
+    display: none;
+  }
+
+  .darkmode-button {
+    margin: auto;
+  }
+
+  body {
+    background: url("https://i1.wp.com/www.construcanchas.com/wp-content/uploads/2021/03/fondo-3.jpg?w=1280&ssl=1") center center no-repeat;
+    background-size: cover;
+  }
+}
