@@ -48,5 +48,10 @@ Este proyecto es una aplicación web sencilla que permite a los usuarios registr
 - Login:
   - Usuario y contraseña correctos según los datos registrados.
 
+### Cambios realizados
+Agregué funcionalidad para que la sesión dure 10 minutos después de iniciar sesión exitosamente.
+
+- Sesión con tiempo limitado: Se guarda en `localStorage` el usuario actual y el tiempo de expiración.
+- Temporizador: Uso de `setTimeout` para eliminar la sesión y redirigir al login con un mensaje al expirar.
 
 
