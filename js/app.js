@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showSection(loginSection);
   });
 
-  // Logout
+  // Logout para dsalir de la sesión
   document.getElementById("logout").addEventListener("click", () => {
       localStorage.removeItem(sessionKey);
       showSection(loginSection);
